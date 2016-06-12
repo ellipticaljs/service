@@ -357,7 +357,6 @@
                     if (!err) {
                         self._data = data;
                         if (query.paginate && $paginationProvider) result = $paginationProvider.get(query, data);else result = data;
-                        result = self.onGet(result);
                     }
                     if (callback) callback(err, result);
                 });
@@ -382,7 +381,6 @@
                                             if (err) reject(err);else {
                                                 self._data = data;
                                                 if (query.paginate && $paginationProvider) result = $paginationProvider.get(query, data);else result = data;
-                                                result = self.onGet(result);
                                                 resolve(result);
                                             }
                                         });
@@ -518,7 +516,7 @@
             }
         }, {
             key: '_toQueryable',
-            value: function _toQueryable(val) {
+            value: function _toQueryable(obj) {
                 if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) !== 'object') return obj;
                 var qry = {};
                 for (var key in obj) {
