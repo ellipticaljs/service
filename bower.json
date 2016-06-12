@@ -1,7 +1,7 @@
 {
   "name": "elliptical-service",
   "description": "es7 async/await service abstraction layer",
-  "version":"1.0.1",
+  "version":"1.0.2",
   "main": "elliptical-service.html",
   "authors": [
     "S. Francis"
@@ -43,6 +43,6 @@
     "sassdoc"
   ],
   "dependencies": {
-    "elliptical-soa": "~1.0.23"
+
   }
 }
