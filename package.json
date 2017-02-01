@@ -1,7 +1,7 @@
 {
   "name": "elliptical-service",
   "description": "es7 async/await service abstraction layer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
@@ -9,7 +9,7 @@
     "url": "https://github.com/ellipticaljs/service.git"
   },
   "dependencies": {
-
+    "elliptical-utils": "git+https://github.com/ellipticaljs/utils.git"
   },
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-umd": "^6.8.0",
